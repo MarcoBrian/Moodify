@@ -12,6 +12,15 @@ import * as SpotifyWebApi from "spotify-web-api-node";
 import TrackSearchResult from "./TrackSearchResult"; 
 import Player from "./Player"; 
 import Form from "react-bootstrap/Form";
+import "./Dashboard.css"; 
+import CameraHandler from "./CameraHandler";
+
+
+
+
+
+
+
 
 const Dashboard = (props) => {
   const [isCameraOpen, setIsCameraOpen] = useState(false);
@@ -123,9 +132,10 @@ const Dashboard = (props) => {
   };
 
   return (
-    <Container>
+    <Container fluid
+     style={{"overflow-y":"auto","background-color":"white","padding":"20px","margin-top":"20px","height":"90vh"}} >
       <Row>
-          <Col>
+        <Col>
           <Form.Control
         type="search"
         placeholder="Search Songs/Artists"
@@ -140,16 +150,18 @@ const Dashboard = (props) => {
             chooseTrack={chooseTrack}
           /> }
         )}
-        
       </div>
-
       <div>
           <Player accessToken={accessToken} trackUri={playingTrack?.uri}/>
-
       </div>
-          
           </Col>
+
         <Col>
+          <CameraHandler isCameraOpen={isCameraOpen}
+           setIsCameraOpen={setIsCameraOpen}
+           setCardImage={setCardImage} /> 
+
+
           {isCameraOpen && (
             <Camera
               onCapture={(blob) => handleCapture(blob)}
@@ -160,37 +172,33 @@ const Dashboard = (props) => {
             />
           )}
 
-          {cardImage && (
-            <Button onClick={() => sendPictureToServer()}>
+          <Row>
+            <Col>
+            {cardImage && (
+            <Button variant="outline-info" onClick={() => sendPictureToServer()}>
               {" "}
-              Send Photo for Recommendation{" "}
+              Get Emotion Recommendation{" "}
             </Button>
           )}
+            
+            </Col>
 
-          {isLoading ? (
+            <Col>
+            {isLoading ? (
             <Spinner animation="border" />
           ) : (
             emotionRes && <h1> Result: {emotionRes} </h1>
           )}
+            </Col>
 
-          {/* {cardImage && (
-          <div>
-            <h2>Preview</h2>
-            <Preview src={cardImage && URL.createObjectURL(cardImage)} />
-          </div>
-        )} */}
 
-          <Footer>
-            <Button onClick={() => setIsCameraOpen(true)}>Open Camera</Button>
-            <Button
-              onClick={() => {
-                setIsCameraOpen(false);
-                setCardImage(undefined);
-              }}
-            >
-              Close Camera
-            </Button>
-          </Footer>
+          </Row>
+          
+
+         
+
+
+
         </Col>
 
       </Row>

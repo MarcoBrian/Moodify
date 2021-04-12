@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Dashboard from "./Dashboard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SpotifyLogin from "./SpotifyLogin";
+import './style.css';
 
 
 
