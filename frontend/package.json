@@ -1,0 +1,33 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "react": "16.8.6",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "16.8.6",
+    "react-measure": "latest",
+    "react-scripts": "3.0.1",
+    "react-spotify-web-playback": "^0.8.1",
+    "spotify-web-api-node": "^5.0.2",
+    "styled-components": "4.3.2"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
