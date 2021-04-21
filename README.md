@@ -39,34 +39,34 @@ For the application to work successfully, please run the backend server before r
 #### 2. OAuth authorization with Spotify, Log in to Spotify Premium with User Credentials
 Once user successfully login they will be redirected back to home page of the application
 
-![spotify](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/spotify.jpg)
+![spotify](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/spotify.JPG)
 
 #### 3. Search functionality 
 
 User can search for songs using the search bar and the song results would be shown below
-![search](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/search.jpg)
+![search](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/search.JPG)
 
 
 #### 4. Songs Emotion recommendation 
 #### Neutral 
 Neutral emotion will return back the top songs of the particular user
-![neutral](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/neutral.jpg)
+![neutral](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/neutral.JPG)
 
 #### Happy 
 Return playlists with happy upbeat songs
-![happy](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/happy.jpg)
+![happy](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/happy.JPG)
 
 #### Sad 
 Return playlists with sad songs
-![sad](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/sad.jpg)
+![sad](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/sad.JPG)
 
 #### Surprise 
 Return featured Spotify playlists (new songs / selected songs)
-![surprise](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/surprise.jpg)
+![surprise](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/surprise.JPG)
 
 #### Fear
 Return calming songs (to reduce anxiety, fear)
-![fear](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/fear.jpg)
+![fear](https://github.com/MarcoBrian/aiapplication_webdev/blob/master/images/fear.JPG)
 
 
 
