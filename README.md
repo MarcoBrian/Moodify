@@ -29,3 +29,45 @@ For the application to work successfully, please run the backend server before r
 `$ npm start `
 
 3. This will start the frontend server on http://localhost:3000 , and now you can view the application on the browser. 
+
+# Application Demo
+
+####   1. Landing Page 
+![login](images/login.jpg)
+
+
+#### 2. OAuth authorization with Spotify, Log in to Spotify Premium with User Credentials
+Once user successfully login they will be redirected back to home page of the application
+
+![spotify](images/spotify.jpg)
+
+#### 3. Search functionality 
+
+User can search for songs using the search bar and the song results would be shown below
+![search](images/search.jpg)
+
+
+#### 4. Songs Emotion recommendation 
+#### Neutral 
+Neutral emotion will return back the top songs of the particular user
+![neutral](images/neutral.jpg)
+
+#### Happy 
+Return playlists with happy upbeat songs
+![happy](images/happy.jpg)
+
+#### Sad 
+Return playlists with sad songs
+![sad](images/sad.jpg)
+
+#### Surprise 
+Return featured Spotify playlists (new songs / selected songs)
+![surprise](images/surprise.jpg)
+
+#### Fear
+Return calming songs (to reduce anxiety, fear)
+![fear](images/fear.jpg)
+
+
+
+
