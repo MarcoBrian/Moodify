@@ -11,7 +11,7 @@ client_id=18c397c8958e454789b576afa476a2b1&\
 response_type=token&\
 redirect_uri=http://localhost:3000&\
 scope=streaming%20user-read-email%20user-read-private%20\
-user-library-read%20user-library-modify%20user-read-playback-state\
+user-library-read%20user-library-modify%20user-top-read%20user-read-playback-state\
 %20user-modify-playback-state";
 
 export default function SpotifyLogin() {

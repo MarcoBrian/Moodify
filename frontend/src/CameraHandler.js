@@ -8,6 +8,7 @@ export default function CameraHandler({
   isCameraOpen,
   setIsCameraOpen,
   setCardImage,
+  setEmotionRes
 }) {
 
   const style = {"margin-bottom":"20px"}
@@ -17,6 +18,7 @@ export default function CameraHandler({
       onClick={() => {
         setIsCameraOpen(false);
         setCardImage(undefined);
+        setEmotionRes(null); 
       }}
     >
       Close Camera <FontAwesomeIcon icon={faTimesCircle} />

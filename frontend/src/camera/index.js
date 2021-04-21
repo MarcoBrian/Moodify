@@ -124,7 +124,7 @@ export function Camera({ onCapture, onClear }) {
           </Container>
 
           {isVideoPlaying && (
-            <Button onClick={isCanvasEmpty ? handleCapture : handleClear}>
+            <Button onClick={isCanvasEmpty ? handleCapture : handleClear} style={{"margin":"10px"}}>
               {isCanvasEmpty ? "Take a picture" : "Take another picture"}
             </Button>
           )}
