@@ -1,6 +1,6 @@
-# Song Recommendation Through Facial Emotion Detection
+# Moodify: AI-based Song Recommendations for Spotify Users
 Emotion Recognition With Spotify API 
-
+Using Deep Neural Inception Net to detect facial emotion and recommend songs through Spotify API
 
 
 # Backend and Python Environment
